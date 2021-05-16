@@ -5,6 +5,7 @@ import java.lang.String;
 import leetcode.practise.AlikeStringHalves;
 import leetcode.practise.TwoSum;
 import leetcode.practise.*;
+import leetcode.practise.StringReverse;
 import java.util.Arrays;
 
 
@@ -16,7 +17,8 @@ public class Leetcode {
         System.out.println("Enter String : \n" +
                 "1704. Alike String \n" +
                 "1. Two Sum \n" +
-                "136. Single Number \n");
+                "136. Single Number \n" +
+                "344. Reverse String \n");
         String text = sc.nextLine();
 
         switch(text) {
@@ -41,6 +43,14 @@ public class Leetcode {
                 int[] inputsn = {4,1,2,1,2};
                 int sn = singleNumber.singleNumber(inputsn);
                 System.out.println("Single Number is : "+ sn);
+                break;
+
+            case "344":
+                StringReverse stringReverse = new StringReverse();
+                char[] reversal = {'r', 'h', 'e', 'y', 'a'};
+                char[] rs = stringReverse.reverseString(reversal);
+                System.out.println("Reversed String : " + Arrays.toString(rs));
+                break;
 
             default:
                 break;
