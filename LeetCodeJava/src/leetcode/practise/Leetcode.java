@@ -19,7 +19,8 @@ public class Leetcode {
                 "1. Two Sum \n" +
                 "136. Single Number \n" +
                 "344. Reverse String \n" +
-                "121. Best time to Buy and Sell stock \n");
+                "121. Best time to Buy and Sell stock \n " +
+                "70. Climbing Stairs \n");
         String text = sc.nextLine();
 
         switch(text) {
@@ -58,6 +59,13 @@ public class Leetcode {
                 int[] prices = {7,1,5,3,6,4};
                 int profit = buySell.maxProfit(prices);
                 System.out.println("Profit : " + profit);
+                break;
+
+            case "70":
+                ClimbingStairs cs = new ClimbingStairs();
+                int stair = 11;
+                int possibleCombination = cs.climbStairs(stair);
+                System.out.println("Number of possible combinations (Fibonacci term value): "+ possibleCombination);
                 break;
 
             default:
