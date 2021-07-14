@@ -1,4 +1,4 @@
-package leetcode.practise;
+package leetcode.easy;
 
 class StringReverse {
     public char[] reverseString(char[] s) {

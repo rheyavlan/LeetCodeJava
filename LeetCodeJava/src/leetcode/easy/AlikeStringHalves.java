@@ -1,4 +1,4 @@
-package leetcode.practise;
+package leetcode.easy;
 
 public class AlikeStringHalves {
     public static boolean halvesAreAlike (String s){

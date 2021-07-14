@@ -1,4 +1,4 @@
-package leetcode.practise;
+package leetcode.easy;
 
 class BuySell {
     public int maxProfit(int[] prices) {
