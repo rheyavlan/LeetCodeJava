@@ -23,7 +23,9 @@ public class Leetcode {
                 "70. Climbing Stairs \n" +
                 "1920. Build Array from Permutation \n" +
                 "771. Jewels and Stones \n" +
-                "1512. Number of Good Pairs \n");
+                "1512. Number of Good Pairs \n" +
+                "1480. Running Sum of 1d Array\n" +
+                "1672. Richest Customer Wealth \n");
         String text = sc.nextLine();
 
         switch(text) {
@@ -98,6 +100,20 @@ public class Leetcode {
                 int[] nums = {1,2,3,1,1,3};
                 int countOfGoodPairs = numberOfGoodPairs.numIdenticalPairs(nums);
                 System.out.println("Number of Good Pairs "+ countOfGoodPairs);
+                break;
+
+            case "1480":
+                RunningSum runningSum = new RunningSum();
+                int[] numsRs = {3,1,2,10,1};
+                int [] runningSumArr = runningSum.runningSum(numsRs);
+                System.out.println("Running Sum : "+ Arrays.toString(runningSumArr));
+                break;
+
+            case "1672":
+                RichCustWealth richCustWealth = new RichCustWealth();
+                int[][] accounts = {{1,5},{7,3},{3,5}};
+                int maxWealth = richCustWealth.maximumWealth(accounts);
+                System.out.println("Rich customer Wealth : " + maxWealth);
                 break;
 
             default:
