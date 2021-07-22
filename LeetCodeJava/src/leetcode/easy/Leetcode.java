@@ -31,7 +31,9 @@ public class Leetcode {
                 "1672. Richest Customer Wealth \n" +
                 "1929. Concatenation of Array \n" +
                 "1431. Kids With the Greatest Number of Candies \n" +
-                "1470. Shuffle the Array \n");
+                "1470. Shuffle the Array \n" +
+                "1365. How Many Numbers Are Smaller Than the Current Number \n" +
+                "1732. Find the Highest Altitude \n");
         String text = sc.nextLine();
 
         switch(text) {
@@ -144,6 +146,19 @@ public class Leetcode {
                 int[] shuffled = shuffleArray.shuffle(shuffle, shuffleNum);
                 System.out.println("Shuffled Array : "+ Arrays.toString(shuffled));
                 break;
+
+            case "1365":
+                SmallNumThanCurrent smallerNumbersThanCurrent = new SmallNumThanCurrent();
+                int[] small = {8,1,2,2,3};
+                int[] smallNums = smallerNumbersThanCurrent.smallerNumbersThanCurrent(small);
+                System.out.println("Small Numbers : " + Arrays.toString(smallNums));
+                break;
+
+            case "1732":
+                HighestAltitude highestAltitude = new HighestAltitude();
+                int gain[] = {-5,1,5,0,-7};
+                int largestAltitude = highestAltitude.largestAltitude(gain);
+                System.out.println("Highest Altitude is : "+ largestAltitude);
 
 
             default:
