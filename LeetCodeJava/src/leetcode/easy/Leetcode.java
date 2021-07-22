@@ -8,6 +8,9 @@ import leetcode.easy.*;
 import leetcode.easy.StringReverse;
 import java.util.Arrays;
 
+import java.util.ArrayList;
+import java.util.List;
+
 
 public class Leetcode {
 
@@ -25,7 +28,10 @@ public class Leetcode {
                 "771. Jewels and Stones \n" +
                 "1512. Number of Good Pairs \n" +
                 "1480. Running Sum of 1d Array\n" +
-                "1672. Richest Customer Wealth \n");
+                "1672. Richest Customer Wealth \n" +
+                "1929. Concatenation of Array \n" +
+                "1431. Kids With the Greatest Number of Candies \n" +
+                "1470. Shuffle the Array \n");
         String text = sc.nextLine();
 
         switch(text) {
@@ -115,6 +121,30 @@ public class Leetcode {
                 int maxWealth = richCustWealth.maximumWealth(accounts);
                 System.out.println("Rich customer Wealth : " + maxWealth);
                 break;
+
+            case "1929":
+                ConcatenationArray concatenationArray = new ConcatenationArray();
+                int[] toConcat = {1,3,2,1};
+                int[] concatArray = concatenationArray.getConcatenation(toConcat);
+                System.out.println("Concatenated Array : "+ Arrays.toString(concatArray));
+                break;
+
+            case "1431":
+                KidsCandies kidsCandies = new KidsCandies();
+                int[] candies = {2,3,5,1,3};
+                int extraCandies = 3;
+                List<Boolean> greatestCandyStatus = kidsCandies.kidsWithCandies(candies,extraCandies);
+                System.out.println("Great candy status: "+ greatestCandyStatus);
+                break;
+
+            case "1470":
+                ShuffleArray shuffleArray = new ShuffleArray();
+                int[] shuffle = {2,5,1,3,4,7};
+                int shuffleNum = 3;
+                int[] shuffled = shuffleArray.shuffle(shuffle, shuffleNum);
+                System.out.println("Shuffled Array : "+ Arrays.toString(shuffled));
+                break;
+
 
             default:
                 break;
